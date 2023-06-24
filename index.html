@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Ebac</title>
+
+    <link rel="stylesheet" href="/src/css/style.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
-    <form id="form" action="#" role="form"> 
-      <div>
-        <input class="input" id="numeroA" style="margin-bottom: 10px;" required="" type="text" placeholder="Número A">
-      </div>
-      <div>
-        <input class="input" id="numeroB" style="margin-bottom: 10px;" required="" type="text" placeholder="Número B">
-      </div>
-      
-      <div style="flex-direction: row;">
-        <button type="submit">Submeter</button>
-        <button type="reset">Limpar</button>
-      </div>
-      <p style="color: green" id="mensagem"></p>
-    </form>
+    <main class="container">
+      <form id="form">
+        <div class="form-container">
+          <div style="display: grid">
+            <input
+              class="input"
+              type="number"
+              placeholder="Número A"
+              id="numero-1"
+            />
+            <span style="font-size: 11px" id="numero-1-error"></span>
+          </div>
+          <div style="display: grid">
+            <input
+              class="input"
+              type="number"
+              placeholder="Número B"
+              required
+              id="numero-2"
+            />
+            <span style="font-size: 11px" id="numero-2-error"></span>
+          </div>
 
-    <script src="/index.js"></script>
+          <button style="margin-right: 20px" type="submit">Submeter</button>
+          <button type="reset" id="limpar">Limpar</button>
+        </div>
+        <div class="span-container">
+          <span id="msg"></span>
+        </div>
+      </form>
+    </main>
+
+    <script src="/src/js/main.js"></script>
   </body>
 </html>
