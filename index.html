@@ -11,38 +11,22 @@
   </head>
 
   <body>
-    <main class="container">
-      <form id="form">
-        <div class="form-container">
-          <div style="display: grid">
-            <input
-              class="input"
-              type="number"
-              placeholder="Número A"
-              id="numero-1"
-            />
-            <span style="font-size: 11px" id="numero-1-error"></span>
-          </div>
-          <div style="display: grid">
-            <input
-              class="input"
-              type="number"
-              placeholder="Número B"
-              required
-              id="numero-2"
-            />
-            <span style="font-size: 11px" id="numero-2-error"></span>
-          </div>
-
-          <button style="margin-right: 20px" type="submit">Submeter</button>
-          <button type="reset" id="limpar">Limpar</button>
-        </div>
-        <div class="span-container">
-          <span id="msg"></span>
-        </div>
-      </form>
-    </main>
-
+    <header>
+      <h1>Lista de tarefas</h1>
+    </header>
+    <form>
+      <input
+        id="nova-tarefa"
+        type="text"
+        required
+        placeholder="Nome da tarefa"
+      />
+      <button type="submit">Cadastrar</button>
+    </form>
+    <div id="lista">
+      <ul></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="/src/js/main.js"></script>
   </body>
 </html>
