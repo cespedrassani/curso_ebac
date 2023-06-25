@@ -12,21 +12,54 @@
 
   <body>
     <header>
-      <h1>Lista de tarefas</h1>
+      <div class="header">
+        <h1>Formulário de cadastro</h1>
+      </div>
     </header>
     <form>
-      <input
-        id="nova-tarefa"
-        type="text"
-        required
-        placeholder="Nome da tarefa"
-      />
-      <button type="submit">Cadastrar</button>
+      <div class="form-container">
+        <div class="form-campo">
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" required />
+        </div>
+        <div class="form-campo">
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="form-campo">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" name="telefone" id="telefone" required />
+        </div>
+        <div class="form-campo">
+          <label for="cpf">CPF:</label>
+          <input type="text" name="cpf" id="cpf" required />
+        </div>
+        <div class="form-campo">
+          <label for="endereço">Endereço:</label>
+          <input type="text" name="endereço" id="endereço" required />
+        </div>
+        <div class="form-campo">
+          <label for="cep">CEP:</label>
+          <input type="text" name="cep" id="cep" required />
+        </div>
+        <div class="button-container">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </div>
+      </div>
     </form>
-    <div id="lista">
-      <ul></ul>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="/src/js/main.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script src="src/js/jquery.mask.min.js"></script>
+    <script src="src/js/jquery.validate.min.js"></script>
+    <script src="src/js/main.js"></script>
   </body>
 </html>
